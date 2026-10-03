@@ -25,6 +25,7 @@ xcrun swiftc -O -parse-as-library \
   -o "$APP/Contents/MacOS/Awake"
 
 cp Awake/Info.plist "$APP/Contents/Info.plist"
+cp Awake/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 
 echo "→ Podepisuji (ad-hoc, App Sandbox)…"
@@ -33,6 +34,7 @@ codesign --force --options runtime \
   --sign - "$APP"
 
 pkill -x Awake 2>/dev/null || true
+touch "$APP"  # refresh Finder/Dock icon cache
 
 if [[ "${1:-}" == "install" ]]; then
   rm -rf /Applications/Awake.app

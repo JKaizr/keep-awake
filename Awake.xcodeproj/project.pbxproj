@@ -13,6 +13,7 @@
 		AA0000000000000000000033 /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000023 /* StatusMenu.swift */; };
 		AA0000000000000000000034 /* StatusHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000024 /* StatusHeaderView.swift */; };
 		AA0000000000000000000035 /* SelfTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000025 /* SelfTest.swift */; };
+		AA0000000000000000000036 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000028 /* AppIcon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AA0000000000000000000023 /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
 		AA0000000000000000000024 /* StatusHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusHeaderView.swift; sourceTree = "<group>"; };
 		AA0000000000000000000025 /* SelfTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTest.swift; sourceTree = "<group>"; };
+		AA0000000000000000000028 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
 		AA0000000000000000000026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0000000000000000000027 /* Awake.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Awake.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				AA0000000000000000000023 /* StatusMenu.swift */,
 				AA0000000000000000000024 /* StatusHeaderView.swift */,
 				AA0000000000000000000025 /* SelfTest.swift */,
+				AA0000000000000000000028 /* AppIcon.icns */,
 				AA0000000000000000000026 /* Info.plist */,
 				AA0000000000000000000027 /* Awake.entitlements */,
 			);
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0000000000000000000036 /* AppIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Ikona aplikace (noční obloha + šálek kávy), zdroj v `icon/make_icon.py`
+
 ## 1.0 — 2026-10-03
 
 První verze.
