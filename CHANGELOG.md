@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Ikona aplikace (noční obloha + šálek kávy), zdroj v `icon/make_icon.py`
+- Instalační DMG (`make-dmg.sh`): univerzální binárka, okno „přetáhni do Aplikací“, volitelně Developer ID + notarizace
 
 ## 1.0 — 2026-10-03
 

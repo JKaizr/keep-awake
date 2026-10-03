@@ -5,9 +5,9 @@
 # 1. zkontroluje, že nemáš neuložené změny
 # 2. nastaví verzi v Info.plist i v Xcode projektu
 # 3. spustí testy, zbuildí a nainstaluje appku
-# 4. zabalí build/Awake-1.1.zip
+# 4. postaví instalační build/Awake-1.1.dmg
 # 5. udělá commit „Release 1.1“ + tag v1.1 a pushne na GitHub
-# 6. když máš GitHub CLI (gh), rovnou vytvoří GitHub Release se zipem
+# 6. když máš GitHub CLI (gh), rovnou vytvoří GitHub Release s DMG
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -42,8 +42,9 @@ if ! grep -q "ALL PASSED" test-results.txt; then
 fi
 echo "✓ Testy prošly"
 
-ZIP="build/Awake-$VERSION.zip"
-ditto -c -k --keepParent build/Awake.app "$ZIP"
+echo "→ Instalační DMG…"
+bash make-dmg.sh
+ZIP="build/Awake-$VERSION.dmg"
 
 git add Awake/Info.plist Awake.xcodeproj/project.pbxproj
 git commit -m "Release $VERSION"

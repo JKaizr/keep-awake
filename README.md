@@ -52,11 +52,17 @@ Poklepej na **Run Tests.command**. Zbuildí a nainstaluje appku, spustí `Awake 
 8. Zamknout Mac (⌃⌘Q) během běhu → po odemčení stále aktivní, čas sedí.
 9. Přepnout Light/Dark v Nastavení → ikona i menu se přizpůsobí.
 
+## Instalační DMG pro ostatní
+
+Poklepej na **Make Installer.command** (nebo `bash make-dmg.sh`). Vznikne `build/Awake-<verze>.dmg`: univerzální (Apple Silicon i Intel), macOS 13+, okno „přetáhni do Aplikací“.
+
+Bez Apple Developer ID je appka podepsaná jen ad-hoc. Příjemce ji při prvním spuštění musí jednou povolit: **Nastavení systému → Soukromí a zabezpečení → Přesto otevřít**. S Developer ID (99 USD/rok) a notarizací se otevře bez varování, viz hlavička `make-dmg.sh`.
+
 ## Verze a vydávání
 
 1. Udělej změny a commitni je (`git add -A && git commit -m "…"`).
 2. Do `CHANGELOG.md` přidej sekci `## 1.1 — datum` a commitni.
-3. Spusť `bash release.sh 1.1`: nastaví verzi, otestuje, zbuildí, zabalí `Awake-1.1.zip`, otaguje `v1.1`, pushne a (s `gh`) vytvoří GitHub Release.
+3. Spusť `bash release.sh 1.1`: nastaví verzi, otestuje, zbuildí, postaví `Awake-1.1.dmg`, otaguje `v1.1`, pushne a (s `gh`) vytvoří GitHub Release.
 
 ## V2 nápady
 
