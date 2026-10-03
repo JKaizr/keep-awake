@@ -1,0 +1,19 @@
+# Build output
+build/
+DerivedData/
+*.xcarchive
+
+# Logs / local test output
+build.log
+test-results.txt
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+
+# Local scratch
+_to_delete/
